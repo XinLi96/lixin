@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My starbucks</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="header">
+		<div id="menu">
+			<a id="menu-ic">
+				<img src="img/menu_icon.svg"><br/>
+				<span>菜单</span>
+			</a>
+		</div>
+		<div id="logo">
+			<img src="img/logo.svg">
+		</div>
+		<div id="log-in">
+			<span>星享俱乐部</span></br>
+			<a href="">登录 </a>
+			<span>或</span>
+			<a href=""> 注册</a>
+		</div>
+		<div id="cover"></div>
+		<div id="menu-cl">
+			<ul>
+				<li style="color: #b89f7a">ENGLISH</li>
+				<li style="color: #b89f7a">星巴克门店</li>
+				<div></div>
+				<li>首页</li>
+				<li>新品推荐</li>
+				<li>星享俱乐部</li>
+				<li>星礼卡</li>
+				<li>咖啡文化</li>
+				<li>饮品美食</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script>
+		function isPc(){//判断当前浏览模式 是PC还是移动端
+			var ua = navigator.userAgent;
+			if(/iphone|mobile|phone|android/gi.test(ua)){
+				return false;
+			}
+			return true;
+		}
+
+		var oScript = document.createElement('script');
+
+		oScript.onload = function(){
+			var oScripti = document.createElement('script');
+			oScripti.src = 'js/index.js';
+			document.body.appendChild(oScripti);
+		};
+
+		if(isPc()){//Pc端
+			oScript.src = 'js/jquery-1.12.4.min.js';
+		}else{//移动端
+			oScript.src = 'js/zepto.min.js';
+		}
+
+		document.body.appendChild(oScript);
+	</script>
+</body>
+</html>
