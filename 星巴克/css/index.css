@@ -105,3 +105,19 @@ html{
 	border: #ccc solid 1px;
 }
 /* header结束 */
+/* news开始 */
+#img1{
+	background-image: url(../img/homepage1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-top: 50%;
+}
+@media (max-width: 991px){
+	#img1{
+		background-image: url(../img/homepage1-1.jpg);
+		width: 100%;
+		padding-top: 117%;
+	}
+}
+/* news结束 */
