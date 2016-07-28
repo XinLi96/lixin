@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%
+	height: 100%;
+}
+.wrapper{
+	width: 1002px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/* banner开始 */
+#banner{
+	width: 100%;
+	height: 460px;
+	background-color: #31333e;
+}
+#banner .wrapper{
+	position: relative;
+}
+#arrows{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 205px;
+}
+.prev-arrow{
+	width: 29px;
+	height: 50px;
+	background: url(../img/sprite.png) no-repeat 0 -74px;
+	float: left;
+	cursor: pointer;
+}
+.next-arrow{
+	width: 29px;
+	height: 50px;
+	background: url(../img/sprite.png) no-repeat -29px -74px;
+	float: right;
+	cursor: pointer;
+}
+#picture{
+	width: 4008px;
+	height: 460px;
+	position: absolute;
+}
+#picture img{
+	float: left;
+	width: 1002px;
+	height: 460px;
+}
+/* banner结束 */
+
+/* news开始 */
+#n-left, #n-center, #n-right{
+	width: 334px;
+	height: 492px;
+	float: left;
+	/*background-color: gray;*/
+}
+#n-left, #n-center, #n-right p{
+	text-align: center;
+	margin-top: 115px;
+	/*line-height: 230px;*/
+	color: #626262;
+	font-size: 30px;
+	display: block;
+}
+#web, #soc, #mob{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 50px;
+}	
+#web{
+	background: url(../img/sprite.png) no-repeat 0 -127px;
+}	
+#soc{
+	background: url(../img/sprite.png) no-repeat 0 -230px;
+}
+#mob{
+	background: url(../img/sprite.png) no-repeat 0 -334px;
+}
+/* news结束 */
