@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="welcom.html">
+		用户名：<input type="text" name="username"></br>
+		密码：<input type="password" name="password"></br>
+		<input type="submit" id="btn">
+	</form>
+
+	<script src="jquery-1.12.4.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+	<script>
+		$(function(){
+			$('#btn').on('click',function(){
+				$.cookie('username',$('input[name=username]').val(),5);
+			});
+		});
+		console.log(document.cookie);
+	</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		li{
+			width: 20px;
+			height: 20px;
+			float: left;
+			list-style: none;
+		}
+		.c1{
+			background-color: #000;
+		}
+		.c2{
+			background-color: #fff;
+		}
+		.c3{
+			background-color: red;
+		}
+		.c4{
+			background-color: blue;		}
+		.c5{
+			background-color: green;
+		}
+		.c6{
+			background-color: yellow;
+		}
+		.now{
+			background-color: black;
+		}
+		#change{
+			width: 200px;
+			height: 50px;
+			/*background-color: #000;*/
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="c1"></li>
+		<li class="c2"></li>
+		<li class="c3"></li>
+		<li class="c4"></li>
+		<li class="c5"></li>
+		<li class="c6"></li>
+	</ul>
+	<div id="change" class='now'></div>
+
+	<script src="jquery-1.12.4.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+	<script>
+		$(function(){
+			if($.cookie('color')){
+				$('#change').removeClass().addClass($.cookie('color'));	
+			}
+			
+			$('li').on('click',function(){
+				var name = this.className;
+				$('#change').removeClass().addClass(name);
+				$.cookie('color',name,5);
+				console.log(document.cookie);
+				console.log(name);
+			});
+		});
+	</script>
+</body>
+</html>
