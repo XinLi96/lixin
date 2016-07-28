@@ -1,0 +1,403 @@
+#title{
+	width: 660px;
+	height: 35px;
+/*	background: red;
+*/
+}
+#title h3{
+	float: left;
+}
+#title1 h3{
+	float: left;
+}
+.more{
+	float: right;
+	height: 30px;
+	width: 100px;
+    border-radius: 25px;
+    text-align: center;
+}
+.more:hover{
+    background: red;
+    color: white;
+}
+li.LastNews{
+	width: 295px;
+	height: 30px;
+	float: left;
+}
+.LastNews a{
+	width: 295px;
+	height: 30px;
+	font: 12px/1.8 Tahoma,Verdana,Arial,宋体;
+	text-align: center;
+	line-height: 30px;
+	text-indent: 15px;
+	display: block;
+	background: url(../img/home-bg1.png) no-repeat left center;
+}
+#list-container{
+	width: 660px;
+	height: 90px;
+	float: left;
+}
+#title{
+	width: 660;
+}
+#title1{
+	width: 400px;
+	height: 35px;
+	float: right;
+}
+.LastNews-r{
+	width: 415px;
+	height: 30px;
+	text-align: center;
+}
+/*#list-container img{
+    text-align: center;
+
+}*/
+/*#list-container li{
+	width: 290px;
+	height: 30px;
+	background: url(../img/home-bg1.png) no-repeat left center;
+	float: left;
+}*/
+#list-container-r li{
+	/*width: 400px;
+	height: 30px;
+	padding: 15px;*/
+    background: url(../img/home-bg1.png) no-repeat left center;
+}
+/*********news开始************/
+#news{
+	height: 195px;
+}
+#in-left{
+	width: 660px;
+	height: 155px;
+	float: left;
+}
+#news .wrapper{
+	height: 195px;
+}
+#title1{
+	background: white;
+}
+#in-right{
+	width: 400px;
+	height: 135px;
+	float: right;
+}
+#list-container-r{
+	width: 401.333px;
+	height: 91.3333px;
+	float: right;
+}
+/*********news结束************/
+
+/*********course开始**************************/
+#course h2{
+    text-align: center;
+    margin-top: 20px;
+}
+#course h5{
+	text-align: center;
+	margin-top: 20px;
+}
+#course{
+	width: 100%;
+	height: 480px;
+	background: rgb(245,245,245);
+	padding-top: 80px;
+}
+#course .warpper{
+	height: 450px;
+}
+#course-ul{
+	margin-top: 50px;
+}
+#course-ul img{
+	margin-right: 20px;
+	text-align: center;
+}
+#course-ul li{
+	float: left;
+}
+#course-ul li a{
+	display: block;
+	text-align: center;
+    color: black;
+}
+/*********course结束**************************/
+
+/*********slogan开始**************************/
+#slogan{
+	width: 100%;
+	height: 350px;
+	background: rgb(147,196,125);
+}
+#know-us-info{
+	width: 525px;
+	height: 333px;
+	/*background: yellow;*/
+	margin: 0 auto;
+	padding-top: 30px;
+}
+#know-us-span{
+	width: 200px;
+	height: 35px;
+	background: white;
+	margin: 0 auto;
+}
+.warpper{
+	width: 1172px;
+	margin:0 auto;
+}
+#span-1{
+
+	display: block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+}
+#span-2{
+	display: block;
+    width: 100px;
+    height: 35px;
+    background: rgb(241,194,50);
+    text-align: center;
+    line-height: 35px;
+    float: left;
+}
+.konw-title{
+	width: 100%;
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+.konw-sub{
+	width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+.know-us-info h4{
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+#know-us-content{
+	width: 525px;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 2.0;
+    border-top: 1px solid #fff;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+#know-us-btn{
+	width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+#know-us-btn a{
+	display: inline-block;
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+#know-us-btn a:hover{
+	background: white;
+	color: black;
+}
+
+/*********slogan结束**************************/
+
+/*********question开始**************************/
+#question{
+	width: 100%;
+    height: 374px;
+    padding: 10px 0;
+    background: #FEE157;
+}
+#question-container{
+	width: 1100px;
+    margin: 30px auto 0;
+}
+#question-left{
+	float: left;
+	width: 675px;
+}
+.question-title{
+	width: 100%;
+    font-size: 18px;
+    color: #666;
+}
+.question-title a{
+	float: right;
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+}
+.question-title a:hover{
+	border-radius: 6px;
+	background: white;
+}
+.question-content{
+	/*width: 100%;
+    height: 25px;
+    padding: 8px 0 0 5px;
+    font-size: 15px;
+    line-height: 25px;
+    border-bottom: 1px dotted #999;*/
+    width: 100%; */
+    height: 170px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px dotted #999;
+}
+.question-list {
+    width: 100%;
+    height: 25px;
+    padding: 8px 0 0 5px;
+    font-size: 15px;
+    line-height: 25px;
+    border-bottom: 1px dotted #999;
+}
+.question-list-link {
+    display: inline-block;
+    width: 610px;
+    height: 25px;
+    text-indent: 10px;
+    color: #666;
+    background: url('../img/Problem-bg.png') left center no-repeat;
+}
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+#question-right{
+	float: right;
+    width: 335px;
+}
+.question-right-title{
+	width: 100%;
+	height: 32px;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+}
+#question-form{
+	margin-top: 20px;
+    border: 1px dotted #999;
+}
+#question-form form {
+    padding: 0 37px;
+}
+.question-form-label {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+}
+.question-form-input {
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    border: 1px dotted #ccc;
+}
+.question-form-star {
+    color: #ff0000;
+}
+#code-content {
+    width: 100%;
+    margin-top: 10px;
+}
+.question-label-code {
+    font-size: 15px;
+    color: #666;
+}
+.question-code {
+    width: 82px;
+    height: 24px;
+    border: 1px dotted #ccc;
+}
+#btn-content {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+.question-form-btn {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    background: #666;
+}
+/*********question结束**************************/
+
+
+/*********footer开始*******************/
+#footer {
+    width: 100%;
+    height: 122px;
+    padding: 15px 0 20px;
+    background: #414B4A;
+}
+.footer-menu {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer-menu-link {
+    margin: 0 0 20px 10px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+.footer-phone {
+    margin-top: 6px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+.footer-ad {
+    margin-top: 6px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+.footer-ad a {
+    font-size: 15px;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+}
+/*********footer结束*******************/
