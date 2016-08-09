@@ -32,7 +32,7 @@
 	while($result = mysqli_fetch_array($query)){
  ?>
  
-	<h2><a href="view.php?id=<?php echo $result['blogid']?>">标题:<?php echo $result['title']?></a> | <a href="edit.php?id=<?php echo $result['blogid']?>">编辑</a> | <a href="del.php?id=<?php echo $result['blogid']?>">删除</a></h2>
+	<h2><a href="view.php?id=<?php echo $result['blogid']?>">标题:<?php echo $result['title']?></a> | <a href="edit.php?id=<?php echo $result['blogid']?>">编辑</a> | <a href="del.php?id=<?php echo $result['blogid']?>">删除</a> | <a href="pl.php?id=<?php echo $result['blogid']?>">评论</a></h2>
 	<li><?php echo $result['time']?></li>
 	<p><?php echo iconv_substr($result['content'],0,4).'...'?></p>
 	<hr/>
