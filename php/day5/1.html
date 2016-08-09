@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="2.php" method="post">
+		用户名：<input type="text" name="username" id="u1"><br/>
+		<input type="submit" name="sub" value="注册">
+	</form>
+
+	<script src="jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('#u1').on('blur',function(){
+				// alert(1);
+				$.get('2.php','username='+this.value,function(data){
+					if(data == 'error'){
+						$('#u1').after('<span id="sp">用户已存在</span>');
+					}else{
+						$('#sp').remove();
+					}
+				},'text')
+			});
+		});
+
+	</script>
+</body>
+</html>
