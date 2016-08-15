@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+
+	<script>
+		for(var i = 1000;i<=9999;i++){
+			var fir = Math.floor(i/1000);
+			var sec = Math.floor((i-fir*1000)/100);
+			var thi = Math.floor((i-fir*1000-sec*100)/10);
+			var fou = Math.floor((i-fir*1000-sec*100-thi*10)/1);
+
+			if(i%13==0 && fir == sec + thi){
+				document.write(i +　' ');
+			}
+		}
+	</script>
+</body>
+</html>/
