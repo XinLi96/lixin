@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			height: 2000px;
+		}
+		#container{
+			width: 100px;
+			height: 300px;
+			background: #ccc;
+			position: fixed;
+			left: -100px;
+			top: 300px;
+		}
+		#div1{
+			width: 100px;
+			height: 300px;
+			background: red;
+			position: absolute;
+			left: 100px;
+			top: 0;
+			text-align: center;
+			line-height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="div1">联系我</div>
+	</div>
+
+	<script>
+		var oContainer = document.getElementById('container');
+		var timer;
+
+		oContainer.onmouseover = function(){
+			clearInterval(timer);
+			timer = setInterval(function(){
+				if(oContainer.offsetLeft >= 0){
+					clearInterval(timer);
+				}else{
+					oContainer.style.left = oContainer.offsetLeft + 10 + 'px';
+				}
+			},30);
+		};
+		oContainer.onmouseout = function(){
+			clearInterval(timer);
+			timer = setInterval(function(){
+				if(oContainer.offsetLeft <= -100){
+					clearInterval(timer);
+				}else{
+					oContainer.style.left = oContainer.offsetLeft - 10 + 'px';
+				}
+			},30);
+		};
+	</script>
+</body>
+</html>
